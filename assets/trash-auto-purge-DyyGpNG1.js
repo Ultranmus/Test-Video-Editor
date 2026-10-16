@@ -1,0 +1,2 @@
+import{Al as e,Ma as t,ja as n,ur as r}from"./app-shell-C55K_DXk.js";var i=e(`TrashAutoPurge`);async function a(e=n){try{let{permanentlyDeleteProject:n}=r.getState(),a=await t(e,async e=>{await n(e)});a.length>0&&(i.info(`Auto-purge removed ${a.length} trashed project(s) past TTL`),await r.getState().loadProjects())}catch(e){i.warn(`autoPurgeExpiredTrash failed`,e)}}export{a as autoPurgeExpiredTrash};
+//# sourceMappingURL=trash-auto-purge-DyyGpNG1.js.map
